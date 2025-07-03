@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body class="scroll-smooth" id="Home">
+    <section class="md:mx-[20vh] mx-[5%] max-h-full mt-4 ">
+        <!-- navigation -->
+        <div class="flex justify-between items-center fixed top-0 left-0 w-full bg-white px-[20vh] py-4 z-50 shadow ">
+            <h1 class="text-blue-800 text-xl font-semibold">SAHASWATH</h1>
+            <!-- Hamburger icon -->
+            <div class="md:hidden cursor-pointer" id="burger">
+
+            <!-- Simple burger icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </div>
+
+           <!-- Desktop nav -->
+            <nav class="hidden md:block" aria-label="Main navigation">
+                <ul class="flex space-x-20 ">
+                    <li class="hover:border-[rgba(57,115,244,255)] hover:border-b-2 hover:transition hover:ease-in hover:duration-500 "> <a href="#" class="">Home</a></li>
+                    <li class="hover:border-[rgba(57,115,244,255)] hover:border-b-2 hover:transition hover:ease-in hover:duration-500 "><a href="#about" class="">About</a></li>
+                    <li class="hover:border-[rgba(57,115,244,255)] hover:border-b-2 hover:transition hover:ease-in hover:duration-500 "><a href="#project" class="">Project</a></li>
+                    <li class="hover:border-[rgba(57,115,244,255)] hover:border-b-2 hover:transition hover:ease-in hover:duration-500 "><a href="#contact" class="">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Mobile menu (hidden by default) -->
+        <div id="mobileMenu" class="md:hidden fixed top-20 left-0 w-full  bg-white shadow-lg hidden z-40">
+            <ul class="flex flex-col items-center space-y-4 py-4">
+                <li><a href="#" class="text-blue-800">Home</a></li>
+                <li><a href="#about" class="text-blue-800">About</a></li>
+                <li><a href="#project" class="text-blue-800">Project</a></li>
+                <li><a href="#contact" class="text-blue-800">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- lebel -->
+        <div class="flex flex-col-reverse md:flex-row justify-between mt-40 gap-12">
+            <div class="text-center md:text-left">
+                    <h2 class="text-5xl font-bold my-3">Hi</h2>
+                    <h2 class="text-5xl font-bold my-3">I'm <span class="text-[rgba(57,115,244,255)]">SAHASWATH </span></h2>
+                    <h2 class="text-5xl font-bold my-3">Web Front-End</h2>
+                    <button class="bg-[rgba(57,115,244,255)] font-semibold border-x-[25px] border-y-8 border-[rgba(57,115,244,255)] text-white rounded-lg my-5 hover:shadow-lg hover:scale-95 transition cursor-pointer ">Contect</button>
+                
+                    <ul class="flex space-x-4">
+                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M20.47 2H3.53a1.45 1.45 0 0 0-1.47 1.43v17.14A1.45 1.45 0 0 0 3.53 22h16.94a1.45 1.45 0 0 0 1.47-1.43V3.43A1.45 1.45 0 0 0 20.47 2M8.09 18.74h-3v-9h3ZM6.59 8.48a1.56 1.56 0 1 1 0-3.12a1.57 1.57 0 1 1 0 3.12m12.32 10.26h-3v-4.83c0-1.21-.43-2-1.52-2A1.65 1.65 0 0 0 12.85 13a2 2 0 0 0-.1.73v5h-3v-9h3V11a3 3 0 0 1 2.71-1.5c2 0 3.45 1.29 3.45 4.06Z"/></svg></a></li>
+                        <li> <a href="https://github.com/sahaswath"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12.001 2c-5.525 0-10 4.475-10 10a9.99 9.99 0 0 0 6.837 9.488c.5.087.688-.213.688-.476c0-.237-.013-1.024-.013-1.862c-2.512.463-3.162-.612-3.362-1.175c-.113-.288-.6-1.175-1.025-1.413c-.35-.187-.85-.65-.013-.662c.788-.013 1.35.725 1.538 1.025c.9 1.512 2.337 1.087 2.912.825c.088-.65.35-1.087.638-1.337c-2.225-.25-4.55-1.113-4.55-4.938c0-1.088.387-1.987 1.025-2.687c-.1-.25-.45-1.275.1-2.65c0 0 .837-.263 2.75 1.024a9.3 9.3 0 0 1 2.5-.337c.85 0 1.7.112 2.5.337c1.913-1.3 2.75-1.024 2.75-1.024c.55 1.375.2 2.4.1 2.65c.637.7 1.025 1.587 1.025 2.687c0 3.838-2.337 4.688-4.562 4.938c.362.312.675.912.675 1.85c0 1.337-.013 2.412-.013 2.75c0 .262.188.574.688.474A10.02 10.02 0 0 0 22 12c0-5.525-4.475-10-10-10"/></svg> </a></li>
+                    </ul>
+            </div>
+            <div class= " flex flex-auto  ">
+                 <img src="/src/img/1 (5).jpg" alt="Portrait of Sahaswath" class="rounded-full w-full h-auto max-w-xs mx-auto object-cover">
+            </div>
+        </div>
+    </section>
+    <!-- about -->
+    <!-- <section id="about" class="mx-[20vh] mt-[20%] max-h-full h-screen">
+        <h1 class="text-center text-4xl font-bold underline text-[rgba(57,115,244,255)] m-9">about</h1>
+        <div class="flex flex-col items-center md:flex-row gap-8">
+            <div class="w-full md:w-2/3">
+                <img src="/src/img/IMG_6375.JPG" class="w-full h-auto rounded-lg" alt="photo">
+            </div>
+            <div class="w-full md:w-2/3 ">
+                <h4>I am ROEUP SAMOUETSOPHEASAHASWATH</h4>
+                <p class="text-lg leading-relaxed text-gray-700">
+                    I’m someone who loves building cool things on the web. I started learning web design because I wanted to make creative and interactive websites that actually work well. I enjoy working with HTML, CSS, JavaScript, and recently I started exploring React to make things even more dynamic. Right now, I'm focused on growing as a front-end developer and creating beautiful, functional websites for real people.
+                  </p>
+            </div>
+        </div>
+    </section> -->
+
+    <section id="about" class="md:mx-[20vh] mx-7 mt-[10vh] max-h-full">
+        <h1 class="text-center text-4xl font-bold underline text-[rgba(57,115,244,255)] mb-10">About Me</h1>
+      
+        <div class="flex flex-col md:flex-row items-center gap-12">
+          <!-- Image -->
+          <div class="w-full md:w-1/2">
+            <img src="/src/img/1 (3).jpg" alt="Roeup Samouetsopheasahaswath" class="rounded-lg shadow-lg w-full h-auto">
+          </div>
+      
+          <!-- Content -->
+          <div class="w-full md:w-1/2 ">
+            <h4 class="text-2xl font-semibold mb-3">Hi, I'm Roeup Samouetsopheasahaswath</h4>
+            <p class="text-lg text-gray-700 leading-relaxed mb-6">
+              I'm a front-end developer who loves building clean, responsive, and interactive websites. I work with HTML, CSS, JavaScript, and React to bring designs to life and create great user experiences. I'm always learning new technologies and improving my skills through hands-on projects and real-world challenges.
+            </p>
+      
+            <!-- Skills -->
+            <h5 class="text-xl font-semibold text-blue-800 mb-2">Skills:</h5>
+            <ul class="list-disc list-inside text-gray-700 mb-6">
+              <li>HTML5 & CSS3</li>
+              <li>Tailwind CSS</li>
+              <li>JavaScript (ES6+)</li>
+              <li>React.js</li>
+              <li>Responsive Web Design</li>
+              <li>Git & GitHub</li>
+            </ul>
+      
+            <!-- Resume Download -->
+            <a href="/src/assets/#####.pdf" download class="inline-block bg-[rgba(57,115,244,255)] text-white font-semibold px-6 py-2 rounded-lg shadow hover:scale-95 hover:shadow-xl transition  custom:p-2">
+              Download Resume
+            </a>
+          </div>
+        </div>
+      </section>
+
+    <!-- project -->
+    <section id="project" class=" " >
+        <h1 class="text-center text-4xl font-bold underline text-[rgba(57,115,244,255)] m-9">project</h1>
+        <div class="flex justify-center md:mx-[20vh] mx-[6vh] ">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-screen-lg">
+                <!-- card1 -->
+                <div class="p-4 rounded-lg border border-stone-950">
+                    <img src="/src/img/food menu.PNG" alt="Project Screenshot" class="w-full h-48 object-cover rounded-lg">
+                    <h3 class="text-xl text-center font-semibold mt-2">Recipe UI</h3>
+                    <p class="text-gray-600 text-center text-sm mt-1">Built with HTML, Tailwind, and JS.</p>
+                    <div class="flex justify-center mt-2 space-x-3">
+                      <a href="https://your-live-site.com" class="text-blue-600 hover:underline text-sm">Live Demo</a>
+                      <a href="https://github.com/yourusername/project-repo" class="text-blue-600 hover:underline text-sm">Source Code</a>
+                    </div>
+                  </div>
+                <!-- card2 -->
+                <div class=" p-4 rounded-lg border border-stone-950">
+                    <img src="" alt="" class="w-full h-48  object-cover rounded-lg">
+                    <h3 class="text-xl text-center">sdfsdfs</h3>
+                </div>
+                <!-- card3 -->
+                <div class=" p-4 rounded-lg border border-stone-950">
+                    <img src="" alt="" class="w-full h-48  object-cover rounded-lg">
+                    <h3 class="text-xl text-center">sdfsdf</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact -->
+    <section class=" md:mx-[20vh] custom:mt-[10vh] " >
+        <div class="" id="contact" >
+            <h1 class="text-[rgba(57,115,244,255)] text-3xl text-center underline font-bold">Contact</h1>
+        </div>
+        <form  class="text-center mt-[25px]">
+            
+            <input type="email" id="email" name="email" placeholder="Email" class="my-3 border-2 border-gray-600 w-full max-w-xs mx-auto block px-3 py-2 rounded">
+
+            <textarea name="message" placeholder="Your Message" rows="5" class="my-3 border-2 border-gray-600 w-full max-w-xs mx-auto block px-3 py-2 rounded"></textarea>
+            
+            <input type="submit" value="Submit" class="bg-[rgba(57,115,244,255)] text-white text-xl w-full max-w-xs mx-auto block py-2 rounded-lg hover:shadow-lg hover:scale-95 transition cursor-pointer">
+        </form>
+    </section>
+    <!-- Footer -->
+        <footer class="bg-[rgba(57,115,244,255)] text-white py-6 mt-20">
+            <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+            <p class="text-sm text-center md:text-left mb-4 md:mb-0">&copy; 2025 Sahaswath. All rights reserved.</p>
+            <div class="flex space-x-4">
+                <a href="#" class="hover:text-gray-300">LinkedIn</a>
+                <a href="https://github.com/sahaswath" class="hover:text-gray-300">GitHub</a>
+                <a href="#contact" class="hover:text-gray-300">Contact</a>
+            </div>
+            </div>
+        </footer>
+   
+    
+    <script src="index.js"></script>
+
+</body>
+</html>
